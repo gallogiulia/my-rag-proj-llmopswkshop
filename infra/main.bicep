@@ -149,7 +149,7 @@ module storageBlobDataReaderRoleToProject 'core/security/role.bicep' = {
   params: {
     principalId: ai.outputs.projectPrincipalId
     roleDefinitionId: '2a2b9908-6ea1-4ae2-8e65-a410df84e7d1' // Storage Blob Data Reader role
-    principalType: 'ServicePrincipal' // Replace with the correct principal type if needed
+    principalType: 'ServicePrincipal' 
   }
 }
 
@@ -159,7 +159,7 @@ module storageBlobDataReaderRoleToUser 'core/security/role.bicep' = {
   params: {
     principalId: principalId
     roleDefinitionId: '2a2b9908-6ea1-4ae2-8e65-a410df84e7d1' // Storage Blob Data Reader role
-    principalType: 'ServicePrincipal' // Replace with the correct principal type if needed
+    principalType: principalType 
   }
 }
 
